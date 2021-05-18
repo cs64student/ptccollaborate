@@ -1,0 +1,199 @@
+/*  
+Author: Christina Sereday
+File Name: styles.css
+Date: 5/17/21 reboot
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul {
+      margin: 0;
+      padding: 0;
+      border: 0;
+  }
+  
+  /* MIDTERM background color change */
+  body {
+    background-color: #c0c0c0;
+  }
+  
+  /* Style rule for logo Id image  */
+  #logos {
+      max-width: 50%;
+      margin: 10% 25%;
+  }
+  
+  /* Style rules for header content */
+  header {
+    text-align: center;
+    font-size: 1.5em;
+    color: #373684;
+  }
+  
+  /* MIDTERM h1 color */
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    color: #440000;
+  }
+  
+  /* MIDTERM a styling different than on index.html */
+  h3 a {
+    color:rgb(0, 139, 97);
+    font-size: 2em;
+    font-family: 'Akaya Telivigala', cursive;
+  }
+  /* MIDTERM Nav styling*/
+  nav {
+    background-color: #373684;
+    margin: auto;
+  }
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  nav li {
+    display: block;
+    font-size: 2em;
+    border-top: 1px solid #e5e9fc;
+  }
+  nav li a {
+    display: block;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: white;
+  }
+  /* MIDTERM hover effect */
+  nav li a:hover {
+    color:#373684;
+    background-color:#c0c0c0;
+  }
+  
+  /* Style rules for main content */
+  main {
+    padding: 2%;
+    background-color:honeydew;
+    overflow: auto;
+    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+  } 
+  main p {
+    font-size: 1.25em;
+  }
+  
+  div .images {
+    padding: 0%;
+    margin: 1%;
+  }
+  
+  #favorites {
+    padding: 2%;
+    padding-left: 5%;
+    margin: 1%;
+  }
+   /* Style rules for footer content */
+  footer {
+      text-align: center;
+      font-size: 1em;
+      clear: left;  
+  }
+  
+  /* Media Query for Phone Viewport */
+  @media only screen and (max-width: 767px) {
+  
+  /* MIDTERM - phone view stacking the main page columns */
+  #homep1 {
+    max-width: 95%;
+    display: block;
+    margin: 2%;
+    position: auto;
+    border: solid black .25em;/*adding border using <p> ID */
+    }
+  
+  #homep2 {
+    max-width: 95%;
+    display: block;
+    clear: right;
+    margin: 2%;
+    position: auto;
+    border: solid black .25em;/*adding border using ID */
+    }
+  
+  #logos {
+    max-width: 55%;
+    }
+    
+  /* MIDTERM - phone view stacking the main page columns */ 
+  #cat {
+    max-width: 95%;
+    display: block;
+    margin: 2%;
+    }
+  
+  #hops {
+    max-width: 100%;
+    height: auto;
+    }
+  
+  #tests {
+    max-width: 95%;
+    display: block;
+    margin: 2%;
+    position: auto;
+    }
+  }
+  
+  /* Media Query for Desktop and Tablet Viewport */
+  @media only screen and (min-width: 768px) {
+  /* Desktop & Tablet Viewport: Style rule for header */
+  header {
+    padding: 2%;
+    }
+    /* Style rules for nav area */
+    nav li {
+      border-top: none;
+      display: inline-block;
+      font-size: 1.5em;
+      border-right: 1px solid #e5e9fc;
+      }
+    nav li:last-child  {
+      border-right: none;
+    }
+  
+    nav li a {
+      padding: 0.25em 0.5em;
+    }
+  
+  /*  Style rules for main content */
+    ul {
+      margin-left: 5%;
+    }
+    main h2 {
+      font-size: 1.5em;
+    }
+  
+    #homep1, #homep2 {
+      width: 45%;
+      float: left;
+      margin: 2%;
+      border: solid black .25em;/*adding border using ID */
+    }
+    #cat {
+      float: left;
+      max-width: 45%;
+      height: auto;
+      margin: 2%;
+      }
+    #hops {
+      max-width: 100%;
+      height: auto;
+    }
+    #tests {
+      float: right;
+      max-width: 45%;
+      margin: 2%;
+      position: auto;
+      }
+  
+  }
+  
+  
